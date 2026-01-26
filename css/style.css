@@ -187,6 +187,26 @@ body:not(.light-theme)::before {
     z-index: -2; 
     opacity: 0.7; 
 }
+.btn-postman {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 8px 18px !important;
+    line-height: 1 !important;
+    font-size: 14px !important; 
+}
+
+.btn-postman img {
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+@media (max-width: 400px) {
+    .links-projeto {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 footer { 
     text-align: center; 
     padding: 60px 0; 
