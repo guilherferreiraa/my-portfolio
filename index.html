@@ -1,216 +1,593 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio | Guilherme Ferreira</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meu Portfólio | Guilherme Ferreira</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <div class="shooting-star star-1"></div>
+    <div class="shooting-star star-2"></div>
+    <div class="shooting-star star-3"></div>
 
-<body>
-  <div class="shooting-star star-1"></div>
-  <div class="shooting-star star-2"></div>
-  <div class="shooting-star star-3"></div>
+    <nav>
+      <div class="logo">Guilherme Ferreira</div>
+      <ul>
+        <li>
+          <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+        <li>
+          <a href="#certificados"
+            ><i class="fa-solid fa-certificate"></i> Certificados</a
+          >
+        </li>
+        <li>
+          <a href="#projetos"><i class="fa-solid fa-code"></i> Projetos</a>
+        </li>
+        <li>
+          <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+        </li>
+      </ul>
+    </nav>
 
-  <nav>
-    <div class="logo">Guilherme Ferreira</div>
-    <ul>
-      <li>
-        <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
-      </li>
-      <li>
-        <a href="#projetos"><i class="fa-solid fa-code"></i> Projetos</a>
-      </li>
-      <li>
-        <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
-      </li>
-    </ul>
-  </nav>
-
-  <header id="home">
-    <div class="perfil-container">
-      <img src="assets/images/fto de perfil.jpg" alt="Guilherme Ferreira" class="foto-perfil" />
-    </div>
-    <h1>Olá, eu sou o <span class="destaque">Guilherme Ferreira</span></h1>
-    <p>ESTUDANTE PARA SER DESENVOLVEDOR FULL STACK DA GROWDEV</p>
-    <a href="#projetos" class="btn">Ver Meus Projetos</a>
-  </header>
-
-  <section id="sobre">
-    <div class="sobre-conteúdo">
-      <h2>Sobre Mim</h2>
-<p>
-  Olá! Sou o <span>Guilherme Ferreira</span>. Minha curiosidade em entender o que acontecia 
-  'por trás das telas' me trouxe até aqui: uma <strong>transição de carreira</strong> focada no 
-  desenvolvimento de software. Atualmente, através da <strong>Growdev</strong>, estou consolidando 
-  minha base técnica em todo o ecossistema <span>Full Stack</span>.
-</p>
-
-<p>
-  Mais do que aprender linguagens como <span>JavaScript e TypeScript</span>, meu foco é dominar 
-  a lógica e as ferramentas que resolvem problemas reais, como <strong>Node.js, React e Docker</strong>. 
-  Sou movido por desafios e busco minha <strong>primeira oportunidade</strong> para aplicar minha 
-  dedicação e evoluir junto com um time de tecnologia.
-</p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Tecnologias e Ferramentas</h2>
-    <div class="skills-container">
-      <div class="skill-card">
-        <i class="fa-brands fa-html5"></i><span>HTML5</span>
+    <header id="home">
+      <div class="perfil-container">
+        <img
+          src="assets/images/fto de perfil.jpg"
+          alt="Guilherme Ferreira"
+          class="foto-perfil"
+        />
       </div>
-      <div class="skill-card">
-        <i class="fa-brands fa-css3-alt"></i><span>CSS3</span>
-      </div>
-      <div class="skill-card">
-        <i class="fa-brands fa-js"></i><span>JavaScript</span>
-      </div>
-      <div class="skill-card">
-        <i class="fa-brands fa-react"></i><span>React</span>
-      </div>
-      <div class="skill-card">
-        <i class="fa-brands fa-node-js"></i><span>Node.js</span>
-      </div>
-      <div class="skill-card">
-        <i class="fa-brands fa-git-alt"></i><span>Git</span>
-      </div>
-      <div class="skill-card">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-          alt="TS" class="ts-icon" />
-        <span>TypeScript</span>
-      </div>
-      <div class="skill-card">
-        <i class="fa-brands fa-docker"></i><span>Docker</span>
-      </div>
-<div class="skill-card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" 
-         alt="Postman" 
-         class="ts-icon" /> <span>Postman(api)</span>
-</div>
-<div class="skill-card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" 
-         alt="PostgreSQL" 
-         class="ts-icon" />
-    <span>PostgreSQL</span>
-</div>
+      <h1>Olá, eu sou o <span class="destaque">Guilherme Ferreira</span></h1>
+      <p>Estudante de Desenvolvimento Full Stack na Growdev</p>
+      <a href="#projetos" class="btn">Ver Meus Projetos</a>
+    </header>
 
-<div class="skill-card">
-    <i class="fa-solid fa-code"></i> <span>Lógica de Programação</span>
-</div>
-<div class="skill-card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" 
-         alt="Prisma" 
-         class="ts-icon" />
-    <span>Prisma ORM</span>
-</div>
-<div class="skill-card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" 
-         alt="MongoDB" 
-         class="ts-icon" />
-    <span>MongoDB</span>
-</div>
-  </section>
+    <section id="sobre">
+      <div class="sobre-conteúdo">
+        <h2>Sobre Mim</h2>
+        <p>
+          Olá! Sou o <span>Guilherme Ferreira</span>. Minha curiosidade em
+          entender o que acontecia 'por trás das telas' me trouxe até aqui: uma
+          <strong>transição de carreira</strong> focada no desenvolvimento de
+          software. Atualmente, através da <strong>Growdev</strong>, estou
+          consolidando minha base técnica em todo o ecossistema
+          <span>Full Stack</span>.
+        </p>
 
-  <section id="projetos">
-    <h2>Meus Projetos</h2>
-    <div class="grid-projetos">
-      <div class="card">
-        <img src="assets/images/ArchiveAPI.png" alt="API de Jogos" />
-        <div class="card-body">
-          <h3>API de Jogos</h3>
-          <p>
-            Gerenciamento de biblioteca de games utilizando Node.js e
-            TypeScript. Foco em arquitetura limpa e performance.
-          </p>
-          <div class="links-projeto">
-            <a href="https://github.com/GuilhermeeFerreiraa10/Desafio_APIgames" target="_blank"><i
-                class="fa-brands fa-github"></i> Repositório</a>
-          </div>
+        <p>
+          Mais do que aprender linguagens como
+          <span>JavaScript e TypeScript</span>, meu foco é dominar a lógica e as
+          ferramentas que resolvem problemas reais, como
+          <strong>Node.js, React e Docker</strong>. Sou movido por desafios e
+          busco minha <strong>primeira oportunidade</strong> para aplicar minha
+          dedicação e evoluir junto com um time de tecnologia.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Tecnologias e Ferramentas</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <i class="fa-brands fa-html5"></i><span>HTML5</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-css3-alt"></i><span>CSS3</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-js"></i><span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-react"></i><span>React</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-node-js"></i><span>Node.js</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-git-alt"></i><span>Git</span>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+            alt="TS"
+            class="ts-icon"
+          />
+          <span>TypeScript</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-docker"></i><span>Docker</span>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+            alt="Postman"
+            class="ts-icon"
+          />
+          <span>Postman(api)</span>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+            alt="PostgreSQL"
+            class="ts-icon"
+          />
+          <span>PostgreSQL</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-solid fa-code"></i> <span>Lógica de Programação</span>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"
+            alt="Prisma"
+            class="ts-icon"
+          />
+          <span>Prisma ORM</span>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+            alt="MongoDB"
+            class="ts-icon"
+          />
+          <span>MongoDB</span>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <img src="assets/images/GrowFlix.png" alt="GrowFlix" />
-        <div class="card-body">
-          <h3>GrowFlix</h3>
-          <p>
-            Réplica da interface da Netflix desenvolvida durante a formação
-            GrowDev, focando em Grid e Flexbox.
-          </p>
-          <div class="links-projeto">
-            <a href="https://github.com/GuilhermeeFerreiraa10/GrowFlix" target="_blank"><i
-                class="fa-brands fa-github"></i> Repositório</a>
-            <a href="https://growflix-ferreiragui.vercel.app/" target="_blank">Abrir</a>
+    <section id="certificados">
+      <h2>Certificações e Cursos</h2>
+      <div class="certificados-container">
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-graduation-cap"></i>
           </div>
-        </div>
-      </div>
-            <div class="card">
-        <img src="assets/images/telaIncialGrowX(react).png" alt="GrowX" />
-        <div class="card-body">
-          <h3>GROWX (REACT)</h3>
-          <p>Uma réplica da rede social X (antigo Twitter) feita em REACT</p>
-          <div class="links-projeto">
-            <a href="https://github.com/guilherferreiraa/Growtwitter-react-" target="_blank">
-              <i class="fa-brands fa-github"></i> Repositório
+          <div class="certificado-info">
+            <h3>Formação Full Stack Web</h3>
+            <p>Growdev • Concluido</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(Concluido).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
             </a>
-            <a href=" https://guilhermeeferreiraa10-2101441.postman.co/workspace/Guilherme-Ferreira's-Workspace~2f5bd3e4-f1ec-414c-83e0-ac505dabbb2c/collection/48950583-a6e812a3-2b9a-4453-aa88-f4309d2a42a0?action=share&creator=48950583" target="_blank" class="btn-postman">
-              <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" style="
+          </div>
+        </div>
+
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Lógica de Programação</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(logicadeProg).pdf.pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Front-end</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(Front-end).pdf.pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Fundamentos JavaScript</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(fund.JS).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Praticas Avançadas em JavaScript</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(PraticasAvan.JS).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Tópicos Avançadas Front-end</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(topicosAvan.front-end).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Fundamentos do Back-end I</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(back-endlfund.).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Fundamentos do Back-end II</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(back-endllfund.).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>TypeScript</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificadosCertificadoWeb-FullStack(TS).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Programação Orientada à Objetos</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(P.O.O).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Banco de Dados Relacional</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(BDRelacional).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>banco de Dados Relacional Avançado</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(BDRelacionalAvan).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Containers</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(Docker-containers).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Fundamentos cloudComputing</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(Fund.cloudComputing).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Desenvolvimento Web em ReactJS</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(Desenv.webemREACT).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+                <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Desenvolvimento Web em ReactJS Avançado</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(Desenv.webemREACTavand).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+                <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Qualidade Software I</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(QualidadeSoftware).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+                <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Qualidade Software II</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(QualidadeSoftwarell).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+                        <div class="certificado-card">
+          <div class="certificado-icone">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="certificado-info">
+            <h3>Back-end com Banco de Dados NoSQL</h3>
+            <p>Growdev • Concluído</p>
+            <a
+              href="assets/certificados/CertificadoWeb-FullStack(BDNoSQL).pdf"
+              target="_blank"
+              class="btn-certificado"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Visualizar PDF
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>Meus Projetos</h2>
+      <div class="grid-projetos">
+        <div class="card">
+          <img src="assets/images/ArchiveAPI.png" alt="API de Jogos" />
+          <div class="card-body">
+            <h3>API de Jogos</h3>
+            <p>
+              Gerenciamento de biblioteca de games utilizando Node.js e
+              TypeScript. Foco em arquitetura limpa e performance.
+            </p>
+            <div class="links-projeto">
+              <a
+                href="https://github.com/GuilhermeeFerreiraa10/Desafio_APIgames"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i> Repositório</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/GrowFlix.png" alt="GrowFlix" />
+          <div class="card-body">
+            <h3>GrowFlix</h3>
+            <p>
+              Réplica da interface da Netflix desenvolvida durante a formação
+              GrowDev, focando em Grid e Flexbox.
+            </p>
+            <div class="links-projeto">
+              <a
+                href="https://github.com/GuilhermeeFerreiraa10/GrowFlix"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i> Repositório</a
+              >
+              <a href="https://growflix-ferreiragui.vercel.app/" target="_blank"
+                >Abrir</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/telaIncialGrowX(react).png" alt="GrowX" />
+          <div class="card-body">
+            <h3>GROWX (REACT)</h3>
+            <p>Uma réplica da rede social X (antigo Twitter) feita em REACT</p>
+            <div class="links-projeto">
+              <a
+                href="https://github.com/guilherferreiraa/Growtwitter-react-"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i> Repositório
+              </a>
+              <a
+                href="https://guilhermeeferreiraa10-2101441.postman.co/workspace/Guilherme-Ferreira's-Workspace~2f5bd3e4-f1ec-414c-83e0-ac505dabbb2c/collection/48950583-a6e812a3-2b9a-4453-aa88-f4309d2a42a0?action=share&creator=48950583"
+                target="_blank"
+                class="btn-postman"
+              >
+                <img
+                  src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                  style="
                     width: 14px !important;
                     height: 14px !important;
                     margin-right: 5px;
-                  " />
-              Documentation
-            </a>
+                  "
+                />
+                Documentation
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/APiGrowdevers.png" alt="API Growdevers" />
+          <div class="card-body">
+            <h3>API dos Growdevers</h3>
+            <p>
+              Atividade para criar uma API no Postman para listar alunos e não
+              alunos na Growdev.
+            </p>
+            <div class="links-projeto">
+              <a
+                href="https://github.com/GuilhermeeFerreiraa10/api-dos-growdevers"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i> Repositório</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/NIKEL.png" alt="NIKEL" />
+          <div class="card-body">
+            <h3>NIKEL</h3>
+            <p>
+              Site de um banco para monitoramento de entradas e saídas. Meu
+              primeiro projeto Growdev.
+            </p>
+            <div class="links-projeto">
+              <a
+                href="https://github.com/GuilhermeeFerreiraa10/NIKEL"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i> Repositório</a
+              >
+            </div>
           </div>
         </div>
       </div>
-      <div class="card">
-        <img src="assets/images/APiGrowdevers.png" alt="API Growdevers" />
-        <div class="card-body">
-          <h3>API dos Growdevers</h3>
-          <p>
-            Atividade para criar uma API no Postman para listar alunos e não
-            alunos na Growdev.
-          </p>
-          <div class="links-projeto">
-            <a href="https://github.com/GuilhermeeFerreiraa10/api-dos-growdevers" target="_blank"><i
-                class="fa-brands fa-github"></i> Repositório</a>
-          </div>
-        </div>
+    </section>
+
+    <footer>
+      <div class="sociais">
+        <a
+          href="https://github.com/GuilhermeeFerreiraa10"
+          target="_blank"
+          class="git-link"
+          ><i class="fa-brands fa-github fa-2xl"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/guilherme-ferreira-76b371351/"
+          target="_blank"
+          class="linkedin-link"
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/_guilhermeeferreiraa/"
+          target="_blank"
+          class="instagram-link"
+          ><i class="fa-brands fa-instagram fa-2xl"></i
+        ></a>
       </div>
-
-      <div class="card">
-        <img src="assets/images/NIKEL.png" alt="NIKEL" />
-        <div class="card-body">
-          <h3>NIKEL</h3>
-          <p>
-            Site de um banco para monitoramento de entradas e saídas. Meu
-            primeiro projeto Growdev.
-          </p>
-          <div class="links-projeto">
-            <a href="https://github.com/GuilhermeeFerreiraa10/NIKEL" target="_blank"><i class="fa-brands fa-github"></i>
-              Repositório</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="sociais">
-      <a href="https://github.com/GuilhermeeFerreiraa10" target="_blank" class="git-link"><i
-          class="fa-brands fa-github fa-2xl"></i></a>
-      <a href="https://www.linkedin.com/in/guilherme-ferreira-76b371351/" target="_blank" class="linkedin-link"><i
-          class="fa-brands fa-linkedin fa-2xl"></i></a>
-      <a href="https://www.instagram.com/_guilhermeeferreiraa/" target="_blank" class="instagram-link"><i
-          class="fa-brands fa-instagram fa-2xl"></i></a>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
-
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>

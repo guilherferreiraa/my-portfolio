@@ -250,3 +250,116 @@ footer {
 .sociais a:hover i {
     filter: drop-shadow(0 0 15px currentColor);
 }
+/* ==========================================================================
+   SEÇÃO CERTIFICADOS
+   ========================================================================== */
+#certificados { 
+    padding: 80px 10%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+}
+
+#certificados h2 { 
+    margin-bottom: 50px; 
+}
+
+.certificados-container { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 30px; 
+    width: 100%; 
+    max-width: 1150px; 
+}
+
+.certificado-card { 
+    background: var(--card-bg); 
+    border-radius: 15px; 
+    padding: 30px;
+    border: 1px solid rgba(128,128,128,0.1); 
+    transition: 0.4s; 
+    display: flex; 
+    align-items: center; 
+    gap: 20px;
+    height: 100%;
+}
+
+.certificado-card:hover { 
+    transform: translateY(-8px); 
+    border-color: var(--primary-color); 
+}
+
+.certificado-icone { 
+    font-size: 3rem; 
+    color: var(--primary-color); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.certificado-card:hover .certificado-icone {
+    filter: drop-shadow(0 0 10px var(--primary-color));
+}
+
+.certificado-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.certificado-info h3 { 
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.certificado-info p { 
+    font-size: 0.95rem; 
+    color: #ccc; 
+    margin-bottom: 10px;
+}
+
+/* Garante que o texto do parágrafo mude no Light Theme */
+.light-theme .certificado-info p {
+    color: #555;
+}
+
+.btn-certificado { 
+    align-self: flex-start;
+    text-decoration: none; 
+    color: #e74c3c; 
+    border: 1px solid #e74c3c; 
+    padding: 6px 14px; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    font-size: 0.85rem;
+    transition: 0.3s; 
+    display: flex; 
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-certificado i {
+    font-size: 1rem;
+}
+
+.btn-certificado:hover { 
+    background: #e74c3c; 
+    color: white !important; 
+    box-shadow: 0 0 15px rgba(231, 76, 60, 0.5);
+}
+
+/* Ajuste responsivo para telas bem pequenas */
+@media (max-width: 480px) {
+    .certificado-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .btn-certificado {
+        align-self: center;
+    }
+}
